@@ -18,6 +18,7 @@
   <body>
     <!-- navbar -->
     <nav id="nav">
+      <div onclick="myfunction()" class="hamburger-menu">&#8801;</div>
       <div class="left">
         <span class="mdi mdi-chevron-left mdi-36px"></span>
         <span class="mdi mdi-chevron-right mdi-36px"></span>
@@ -28,7 +29,8 @@
       </div>
     </nav>
     <!-- sidebar -->
-    <aside id="sidebar">
+    <aside class="sidebar">
+      <p onclick="myfunction()" class="close-btn">&#x2715;</p>
       <div class="banner">
         <span class="mdi mdi-spotify mdi-48px"></span>
         <h3>Spotify</h3>
@@ -95,6 +97,7 @@
               Purrr with beats to chill, relax, and have fun.
             </div>
           </a>
+
           <a class="card" href="#" target="_blank">
             <img
               src="https://i.scdn.co/image/ab67706f00000002c7059110f5a17c6a5c353e2a"
@@ -267,5 +270,6 @@
         </div>
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>

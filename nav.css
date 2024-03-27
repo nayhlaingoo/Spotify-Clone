@@ -1,3 +1,9 @@
+.hamburger-menu {
+  font-size: 30px;
+  margin-left: 15px;
+  display: none;
+}
+
 #nav {
   position: fixed;
   top: 0;
@@ -55,4 +61,23 @@
 
 #nav .right .login-btn:hover {
   transform: scale(1.06);
+}
+
+@media screen and (max-width: 800px) {
+  #nav .left {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .left {
+    display: none;
+  }
 }
